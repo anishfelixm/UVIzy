@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "141258774368",
+    "firebase_url": "https://uviz-fe109-default-rtdb.firebaseio.com",
+    "project_id": "uviz-fe109",
+    "storage_bucket": "uviz-fe109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141258774368:android:4b907496a3f4d89078b005",
+        "android_client_info": {
+          "package_name": "com.gtappdevelopers.firebasestorageimage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141258774368-omqpqeg9hnbv4inqfjofbai0s0drb3jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvAJsQTWdNF2G22FgL7NwQ0PfSD-CBvbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141258774368-omqpqeg9hnbv4inqfjofbai0s0drb3jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

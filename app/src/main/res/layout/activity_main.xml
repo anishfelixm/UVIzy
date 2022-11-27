@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@color/cardview_dark_background"
+        android:id="@+id/Login"/>
+
+
+    <!--We are using this image view to display our QR code-->
+    <ImageView
+        android:id="@+id/idIVQrcode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/qr_code"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idIVQrcode"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/showw"/>
+
+
+    <!--Edit text to enter text for creating a QR code-->
+    <EditText
+        android:id="@+id/idEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showw"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:hint="@string/enter_your_info"
+        android:inputType="text"
+        android:visibility="invisible"/>
+
+    <!--Button for creating a QR code-->
+    <Button
+        android:id="@+id/idBtnGenerateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/generate_qr_code"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idBtnGenerateQR"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/UpdateK"
+        android:text="Update Key"
+        android:visibility="invisible"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/UpdateK"
+            android:id="@+id/UpdateName"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Key Number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/UpdateName"
+        android:id="@+id/UpdateKeyNo"
+        android:layout_marginTop="10dp"
+
+        android:visibility="invisible"/>
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Time Valid till"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/UpdateKeyNo"
+        android:id="@+id/UpdateHours"
+        android:inputType="datetime"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UpdateHours"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/FinUpd"
+        android:text="Update"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
